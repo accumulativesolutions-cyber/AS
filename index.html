@@ -8,16 +8,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Load Lucide Icons from CDN -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
-  <!-- Load Poppins font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Fix for font loading issues. Instead of using separate link tags,
+      we're now importing the font directly within the style block.
+    */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    
     :root {
       scroll-behavior: smooth;
     }
     .font-poppins {
-        font-family: 'Poppins', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
     /* Keyframe animations */
     @keyframes fadeIn {
