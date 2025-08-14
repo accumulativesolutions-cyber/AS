@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Services — Accumulative Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; background-color: #0f172a; color: #e2e8f0; scroll-behavior: smooth; }
+        .social-bubble-float { animation: bubbleFloat 2s ease-in-out infinite; }
+        @keyframes bubbleFloat { 0% { transform: translateY(0);} 50% { transform: translateY(-5px);} 100% { transform: translateY(0);} }
+        .animate-on-scroll { opacity:0; transform:translateY(20px); transition:opacity .8s ease-out, transform .8s ease-out; }
+        .animate-on-scroll.is-visible { opacity:1; transform:translateY(0); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+    <header class="sticky top-0 z-50 bg-slate-950/70 backdrop-blur-md rounded-b-xl py-4 px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center text-2xl font-bold tracking-tight text-white">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Aspng.png" alt="Accumulative Solutions Logo" class="h-12 w-auto mr-3">
+                Accumulative Solutions
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="services.html" class="text-white font-semibold">Services</a>
+                <a href="about.html" class="text-slate-400 hover:text-white transition-colors duration-300">About</a>
+                <a href="contact.html" class="text-slate-400 hover:text-white transition-colors duration-300">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <select onchange="if(this.value) window.location.href=this.value" class="bg-slate-900 text-slate-200 p-2 rounded">
+                    <option value="index.html">Home</option>
+                    <option value="services.html" selected>Services</option>
+                    <option value="about.html">About</option>
+                    <option value="contact.html">Contact</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-24 px-8">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold text-center mb-6 animate-on-scroll">Our Services</h1>
+            <p class="text-lg text-center text-slate-400 max-w-3xl mx-auto mb-12 animate-on-scroll">We offer a suite of services designed for long-term success.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-slate-900 p-8 rounded-2xl shadow-lg border border-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-400 animate-on-scroll">
+                    <div class="text-blue-400 mb-4">
+                        <!-- icon -->
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Content Strategy</h3>
+                    <p class="text-slate-400">We craft data-driven content plans that build a strong brand voice.</p>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl shadow-lg border border-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-400 animate-on-scroll">
+                    <div class="text-blue-400 mb-4"></div>
+                    <h3 class="text-2xl font-bold mb-2">Social Management</h3>
+                    <p class="text-slate-400">Full-service management of your social channels and community engagement.</p>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl shadow-lg border border-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-400 animate-on-scroll">
+                    <div class="text-blue-400 mb-4"></div>
+                    <h3 class="text-2xl font-bold mb-2">Website Creation</h3>
+                    <p class="text-slate-400">Custom websites that are both beautiful and functional.</p>
+                </div>
+
+                <div class="bg-slate-900 p-8 rounded-2xl shadow-lg border border-slate-800 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-blue-400 animate-on-scroll">
+                    <div class="text-blue-400 mb-4"></div>
+                    <h3 class="text-2xl font-bold mb-2">Performance Analytics</h3>
+                    <p class="text-slate-400">In-depth analysis of your social performance with clear reports.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="contact.html" class="px-8 py-3 border border-blue-400 text-blue-400 rounded hover:bg-blue-400 hover:text-slate-950 transition-all">Talk to us about your project</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-950 py-8 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-8">
+            <p class="text-slate-400">&copy; <span id="year"></span> Accumulative Solutions.</p>
+        </div>
+    </footer>
+
+    <div class="fixed bottom-8 left-4 z-50 flex flex-col space-y-4">
+        <a href="https://wa.me/919359361016" target="_blank" rel="noopener noreferrer" class="bg-green-600 text-white p-3 rounded-full shadow-lg social-bubble-float" title="Chat with us on WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp Logo" class="w-7 h-7">
+        </a>
+        <a href="tel:+919359361016" class="bg-blue-500 text-white p-3 rounded-full shadow-lg social-bubble-float" title="Call us">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const animateOnScroll = () => {
+                document.querySelectorAll('.animate-on-scroll').forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+                    if (rect.top <= viewHeight && rect.bottom >= 0) el.classList.add('is-visible');
+                    else el.classList.remove('is-visible');
+                });
+            };
+            const yearSpan = document.getElementById('year'); if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+            window.addEventListener('scroll', animateOnScroll);
+            window.addEventListener('resize', animateOnScroll);
+            animateOnScroll();
+        });
+    </script>
+</body>
+</html>
 
