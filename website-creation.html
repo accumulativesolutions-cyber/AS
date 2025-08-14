@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Creation — Accumulative Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    body{font-family:'Poppins',sans-serif;background:#0f172a;color:#e2e8f0;scroll-behavior:smooth}
+    .animated-gradient-text{background:linear-gradient(90deg,#f3f4f6,#93c5fd,#f3f4f6);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:gradient-animation 3s ease-in-out infinite}
+    @keyframes gradient-animation{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+    @keyframes bubbleFloat{0%{transform:translateY(0)}50%{transform:translateY(-5px)}100%{transform:translateY(0)}}
+    .social-bubble-float{animation:bubbleFloat 2s ease-in-out infinite}
+    .animate-on-scroll{opacity:0;transform:translateY(20px);transition:opacity .8s,transform .8s}
+    .animate-on-scroll.is-visible{opacity:1;transform:translateY(0)}
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+  <header class="sticky top-0 z-50 bg-slate-950/70 backdrop-blur-md rounded-b-xl py-4 px-8 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <a href="index.html#hero" class="flex items-center text-2xl font-bold tracking-tight text-white">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Aspng.png" alt="Accumulative Solutions Logo" class="h-12 w-auto mr-3">
+        Accumulative Solutions
+      </a>
+      <nav class="hidden md:flex space-x-8">
+        <a href="index.html#services" class="text-slate-400 hover:text-white transition-colors">Services</a>
+        <a href="index.html#about" class="text-slate-400 hover:text-white transition-colors">About</a>
+        <a href="index.html#contact" class="text-slate-400 hover:text-white transition-colors">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="py-20 px-8 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="animated-gradient-text text-4xl md:text-5xl font-bold tracking-tight mb-4">Website Creation</h1>
+        <p class="text-slate-400 text-lg md:text-xl animate-on-scroll">
+          Fast, responsive, and elegant sites that convert—built with modern tech and SEO best practices.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-8 px-8">
+      <div class="max-w-4xl mx-auto space-y-8">
+        <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 animate-on-scroll">
+          <h2 class="text-2xl font-bold mb-2">What You Get</h2>
+          <ul class="list-disc list-inside text-slate-400 leading-relaxed">
+            <li>Custom design aligned with your brand.</li>
+            <li>Mobile-first, accessibility-friendly interfaces.</li>
+            <li>Lightning performance & clean code.</li>
+            <li>SEO setup (meta, schema, sitemaps).</li>
+            <li>Analytics, forms, and integrations.</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-900 rounded-2xl border border-slate-800 p-6 animate-on-scroll">
+          <h2 class="text-2xl font-bold mb-2">Build Process</h2>
+          <ol class="list-decimal list-inside text-slate-400 leading-relaxed space-y-1">
+            <li>Brief & wireframes</li>
+            <li>Design system & components</li>
+            <li>Development & QA</li>
+            <li>Launch & training</li>
+            <li>Ongoing support</li>
+          </ol>
+        </div>
+
+        <div class="flex flex-wrap gap-4 animate-on-scroll">
+          <a href="https://wa.me/919359361016" target="_blank" rel="noopener noreferrer"
+             class="px-6 py-3 border-2 border-blue-400 text-blue-400 rounded-full hover:bg-blue-400 hover:text-slate-950 font-semibold transition-all duration-300 hover:scale-105">
+            Build My Website
+          </a>
+          <a href="index.html#services" class="px-6 py-3 border border-slate-700 rounded-full hover:bg-slate-800 transition">← Back to Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 py-8 text-center border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-8"><p class="text-slate-400">&copy; <span id="year"></span> Accumulative Solutions.</p></div>
+  </footer>
+
+  <div class="fixed bottom-8 left-4 z-50 flex flex-col space-y-4">
+    <a href="https://wa.me/919359361016" target="_blank" rel="noopener noreferrer"
+       class="bg-green-600 text-white p-3 rounded-full shadow-lg transform transition-transform duration-200 hover:scale-110 hover:shadow-2xl social-bubble-float" title="Chat with us on WhatsApp">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="WhatsApp Logo" class="w-7 h-7">
+    </a>
+    <a href="tel:+919359361016"
+       class="bg-blue-500 text-white p-3 rounded-full shadow-lg transform transition-transform duration-200 hover:scale-110 hover:shadow-2xl social-bubble-float" style="animation-delay:.2s" title="Call us">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const animateOnScroll = () => {
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+          const r=el.getBoundingClientRect(); const vh=window.innerHeight||document.documentElement.clientHeight;
+          if(r.top<=vh && r.bottom>=0) el.classList.add('is-visible'); else el.classList.remove('is-visible');
+        });
+      };
+      const y=document.getElementById('year'); if(y) y.textContent=new Date().getFullYear();
+      window.addEventListener('scroll', animateOnScroll); window.addEventListener('resize', animateOnScroll); animateOnScroll();
+    });
+  </script>
+</body>
+</html>
